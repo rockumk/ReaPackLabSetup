@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="ReaPackLabSetup">
-</index>
+<index version="1" name="ReaPackLabSetup" commit="72f50f5b6df9d27d3b8a3a66720eb38aa289efee">
+<metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 ReaPackLabSetup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b ReaPackLabSetup} is the planned lightweight bootstrap and repair companion for {\field{\*\fldinst{HYPERLINK "https://github.com/rockumk/ReaPackLab"}}{\fldrslt{\ul
+ReaPackLab
+}}}
+, the centrally managed REAPER package manager.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Intended responsibility\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Bootstrap an approved ReaPackLab installation.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Detect whether ReaPackLab is missing or requires repair.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Coordinate safe replacement of native extensions while REAPER is {\b not} running.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Retire the original ReaPack extension without deleting unrelated scripts, plugin packages, or legacy registry records.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Avoid requiring students to enter administrator or GitHub credentials.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 ReaPackLab and ReaPackLabSetup are {\b separate extensions} with separate release packages. ReaPackLabSetup is a recovery/bootstrap component, not the full package manager.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Current status\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Repository initialized; no production-ready Setup release has been published here.}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Prototype source lives in the private development repository ReaPackLabDev. It is not yet a complete installation/repair implementation. In particular, the bootstrap must be built and tested before it can consume any pending retirement/repair instructions issued by ReaPackLab.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The full ReaPackLab binary is distributed through {\field{\*\fldinst{HYPERLINK "https://github.com/rockumk/ReaPackLab/releases"}}{\fldrslt{\ul
+ReaPackLab Releases
+}}}
+.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Release packaging\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 The future macOS Apple Silicon Setup binary is intended to be named:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\f1 reaper_reapacklabsetup-arm64.dylib}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Release assets will be attached to versioned GitHub Releases and indexed with ReaPack metadata in this repository, after the binary performs actual verified installation and recovery. Do {\b not} import this repository into classroom REAPER installations until a Setup package and corresponding release have been published and verified.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Based on the ReaPack project by Christian Fillion (LGPL-3.0-or-later).\par}
+}
+]]></description></metadata></index>
