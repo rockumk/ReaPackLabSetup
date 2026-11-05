@@ -1,23 +1,31 @@
-# ReaPack Repository Template
+# ReaPackLabSetup
 
-A template for GitHub-hosted ReaPack repositories with automated
-[reapack-index](https://github.com/cfillion/reapack-index)
-running from GitHub Actions.
+**ReaPackLabSetup** is the planned lightweight bootstrap and repair companion for [ReaPackLab](https://github.com/rockumk/ReaPackLab), the centrally managed REAPER package manager.
 
-Replace the name of the repository in [index.xml](/index.xml) when using this template.
-This will be the name shown in ReaPack.
+## Intended responsibility
 
-```xml
-<index version="1" name="Name of your repository here">
-```
+- Bootstrap an approved ReaPackLab installation.
+- Detect whether ReaPackLab is missing or requires repair.
+- Coordinate safe replacement of native extensions while REAPER is **not** running.
+- Retire the original ReaPack extension without deleting unrelated scripts, plugin packages, or legacy registry records.
+- Avoid requiring students to enter administrator or GitHub credentials.
 
-Replace the contents of this file ([README.md](/README.md)).
-This will be the text shown when using ReaPack's "About this repository" feature.
+ReaPackLab and ReaPackLabSetup are **separate extensions** with separate release packages. ReaPackLabSetup is a recovery/bootstrap component, not the full package manager.
 
-reapack-index looks for package files in subfolders.
-The folder tree represents the package categories shown in ReaPack.
+## Current status
 
-Each package file is expected to begin with a metadata header.
-See [Packaging Documentation](https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation) on reapack-index's wiki.
+**Repository initialized; no production-ready Setup release has been published here.**
 
-The URL to import in ReaPack is [https://github.com/`<your username>`/`<repository name>`/raw/master/index.xml](https://github.com/cfillion/reapack-repository-template/raw/master/index.xml).
+Prototype source lives in the private development repository ReaPackLabDev. It is not yet a complete installation/repair implementation. In particular, the bootstrap must be built and tested before it can consume any pending retirement/repair instructions issued by ReaPackLab.
+
+The full ReaPackLab binary is distributed through [ReaPackLab Releases](https://github.com/rockumk/ReaPackLab/releases).
+
+## Release packaging
+
+The future macOS Apple Silicon Setup binary is intended to be named:
+
+`reaper_reapacklabsetup-arm64.dylib`
+
+Release assets will be attached to versioned GitHub Releases and indexed with ReaPack metadata in this repository, after the binary performs actual verified installation and recovery. Do **not** import this repository into classroom REAPER installations until a Setup package and corresponding release have been published and verified.
+
+Based on the ReaPack project by Christian Fillion (LGPL-3.0-or-later).
