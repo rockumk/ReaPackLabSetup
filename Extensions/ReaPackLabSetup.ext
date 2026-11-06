@@ -1,0 +1,23 @@
+@description ReaPackLabSetup: bootstrap installer for centrally managed ReaPackLab
+@author ReaLab
+@version 0.1.0-dev.2
+@changelog
+  Initial macOS Apple Silicon development bootstrap installer.
+@provides
+  [darwin-arm64] reaper_reapacklabsetup-arm64.dylib https://github.com/rockumk/ReaPackLabSetup/releases/download/v$version/$path
+@link
+  Distribution repository https://github.com/rockumk/ReaPackLabSetup
+  Managed ReaPackLab extension https://github.com/rockumk/ReaPackLab
+@about
+  # ReaPackLabSetup
+
+  ReaPackLabSetup bootstraps the centrally managed ReaPackLab extension for
+  REAPER installations. It is a separate native extension, not a replacement
+  for ReaPackLab.
+
+  This development build is for macOS Apple Silicon (ARM64). Restart REAPER
+  after Setup installs the main extension so that it can load.
+
+  Test in a clean REAPER installation before classroom deployment.
+
+  Based on ReaPack by Christian Fillion (LGPL-3.0-or-later).
