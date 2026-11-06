@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="ReaPackLabSetup" commit="03f5c1d554df7d34bcc8b919075b21dad8069b57">
+<index version="1" name="ReaPackLabSetup" commit="f92be43d7582a85eb1112abd66846e0dd7866e37">
   <category name="Extensions">
     <reapack name="ReaPackLabSetup.ext" type="extension" desc="ReaPackLabSetup: bootstrap installer for centrally managed ReaPackLab">
       <metadata>
@@ -20,6 +20,10 @@
       <version name="0.1.0-dev.2" author="ReaLab" time="2026-11-06T05:39:33Z">
         <changelog><![CDATA[Initial macOS Apple Silicon development bootstrap installer.]]></changelog>
         <source platform="darwin-arm64" file="reaper_reapacklabsetup-arm64.dylib">https://github.com/rockumk/ReaPackLabSetup/releases/download/v0.1.0-dev.2/reaper_reapacklabsetup-arm64.dylib</source>
+      </version>
+      <version name="0.1.0" author="ReaLab" time="2026-11-06T06:03:13Z">
+        <changelog><![CDATA[Stable-channel distribution of v0.1.0-dev.2 macOS ARM64 bootstrap (same binary; not rebuilt).]]></changelog>
+        <source platform="darwin-arm64" file="reaper_reapacklabsetup-arm64.dylib">https://github.com/rockumk/ReaPackLabSetup/releases/download/v0.1.0/reaper_reapacklabsetup-arm64.dylib</source>
       </version>
     </reapack>
   </category>
