@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="ReaPackLabSetup" commit="72f50f5b6df9d27d3b8a3a66720eb38aa289efee">
-<metadata><description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+<index version="1" name="ReaPackLabSetup" commit="03f5c1d554df7d34bcc8b919075b21dad8069b57">
+  <category name="Extensions">
+    <reapack name="ReaPackLabSetup.ext" type="extension" desc="ReaPackLabSetup: bootstrap installer for centrally managed ReaPackLab">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 ReaPackLabSetup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 ReaPackLabSetup bootstraps the centrally managed ReaPackLab extension for REAPER installations. It is a separate native extension, not a replacement for ReaPackLab.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This development build is for macOS Apple Silicon (ARM64). Restart REAPER after Setup installs the main extension so that it can load.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Test in a clean REAPER installation before classroom deployment.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Based on ReaPack by Christian Fillion (LGPL-3.0-or-later).\par}
+}
+]]></description>
+        <link rel="website" href="https://github.com/rockumk/ReaPackLabSetup">Distribution repository</link>
+        <link rel="website" href="https://github.com/rockumk/ReaPackLab">Managed ReaPackLab extension</link>
+      </metadata>
+      <version name="0.1.0-dev.2" author="ReaLab" time="2026-11-06T05:39:33Z">
+        <changelog><![CDATA[Initial macOS Apple Silicon development bootstrap installer.]]></changelog>
+        <source platform="darwin-arm64" file="reaper_reapacklabsetup-arm64.dylib">https://github.com/rockumk/ReaPackLabSetup/releases/download/v0.1.0-dev.2/reaper_reapacklabsetup-arm64.dylib</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
@@ -29,4 +53,6 @@ ReaPackLab Releases
 {\pard \ql \f0 \sa180 \li0 \fi0 Release assets will be attached to versioned GitHub Releases and indexed with ReaPack metadata in this repository, after the binary performs actual verified installation and recovery. Do {\b not} import this repository into classroom REAPER installations until a Setup package and corresponding release have been published and verified.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Based on the ReaPack project by Christian Fillion (LGPL-3.0-or-later).\par}
 }
-]]></description></metadata></index>
+]]></description>
+  </metadata>
+</index>
