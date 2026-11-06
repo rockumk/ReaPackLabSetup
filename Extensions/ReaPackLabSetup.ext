@@ -1,8 +1,8 @@
 @description ReaPackLabSetup: bootstrap installer for centrally managed ReaPackLab
 @author ReaLab
-@version 0.1.0-dev.2
+@version 0.1.0
 @changelog
-  Initial macOS Apple Silicon development bootstrap installer.
+  Stable-channel distribution of v0.1.0-dev.2 macOS ARM64 bootstrap (same binary; not rebuilt).
 @provides
   [darwin-arm64] reaper_reapacklabsetup-arm64.dylib https://github.com/rockumk/ReaPackLabSetup/releases/download/v$version/$path
 @link
