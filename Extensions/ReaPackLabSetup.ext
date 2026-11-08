@@ -1,8 +1,10 @@
 @description ReaPackLabSetup: bootstrap installer for centrally managed ReaPackLab
 @author ReaLab
-@version 0.1.0
+@version 0.1.1
 @changelog
-  Stable-channel distribution of v0.1.0-dev.2 macOS ARM64 bootstrap (same binary; not rebuilt).
+  Rebuilt with matching stable version 0.1.1 and a Developer ID Application signature.
+  Secure timestamp and hardened runtime verified; checksums and provenance are attached to the release.
+  macOS 15.0+ Apple Silicon (ARM64). Signed only; not notarized.
 @provides
   [darwin-arm64] reaper_reapacklabsetup-arm64.dylib https://github.com/rockumk/ReaPackLabSetup/releases/download/v$version/$path
 @link
@@ -15,7 +17,8 @@
   REAPER installations. It is a separate native extension, not a replacement
   for ReaPackLab.
 
-  This development build is for macOS Apple Silicon (ARM64). Restart REAPER
+  This build is for macOS 15.0+ Apple Silicon (ARM64), Developer ID-signed
+  but not notarized. Restart REAPER
   after Setup installs the main extension so that it can load.
 
   Test in a clean REAPER installation before classroom deployment.
