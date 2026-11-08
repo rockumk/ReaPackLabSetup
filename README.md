@@ -1,31 +1,27 @@
 # ReaPackLabSetup
 
-**ReaPackLabSetup** is the planned lightweight bootstrap and repair companion for [ReaPackLab](https://github.com/rockumk/ReaPackLab), the centrally managed REAPER package manager.
+**ReaPackLabSetup** is the separate bootstrap companion for [ReaPackLab](https://github.com/rockumk/ReaPackLab), the centrally managed REAPER package manager. It is not the full package manager.
 
-## Intended responsibility
+**Current stable release: [v0.1.1](https://github.com/rockumk/ReaPackLabSetup/releases/tag/v0.1.1)** — macOS 15.0 or later, Apple Silicon (ARM64). The binary embeds version **0.1.1** and is Developer ID Application signed, securely timestamped, and built with hardened runtime.
 
-- Bootstrap an approved ReaPackLab installation.
-- Detect whether ReaPackLab is missing or requires repair.
-- Coordinate safe replacement of native extensions while REAPER is **not** running.
-- Retire the original ReaPack extension without deleting unrelated scripts, plugin packages, or legacy registry records.
-- Avoid requiring students to enter administrator or GitHub credentials.
+## Repository / installation
 
-ReaPackLab and ReaPackLabSetup are **separate extensions** with separate release packages. ReaPackLabSetup is a recovery/bootstrap component, not the full package manager.
+ReaPack repository index URL:
 
-## Current status
+```text
+https://raw.githubusercontent.com/rockumk/ReaPackLabSetup/master/index.xml
+```
 
-**Repository initialized; no production-ready Setup release has been published here.**
+The native asset is named `reaper_reapacklabsetup-arm64.dylib` and is packaged through `Extensions/ReaPackLabSetup.ext`. Restart REAPER after installing native extensions or after Setup installs the main extension. The full managed extension is distributed separately through [ReaPackLab Releases](https://github.com/rockumk/ReaPackLab/releases).
 
-Prototype source lives in the private development repository ReaPackLabDev. It is not yet a complete installation/repair implementation. In particular, the bootstrap must be built and tested before it can consume any pending retirement/repair instructions issued by ReaPackLab.
+## Security and scope
 
-The full ReaPackLab binary is distributed through [ReaPackLab Releases](https://github.com/rockumk/ReaPackLab/releases).
+**Signed, not notarized.** Apple notarization and Gatekeeper acceptance have not been established; macOS security warnings may still occur. Test actual bootstrap, installation and recovery behavior in an isolated REAPER resource directory before classroom deployment. Publishing this signed build is not a claim that every planned repair/retirement workflow is implemented or validated.
 
-## Release packaging
+The release includes the dylib, `ReaPackLabSetup-SHA256SUMS.txt`, and `ReaPackLabSetup-provenance.json`, identifying the final signed bytes and build provenance. Existing releases are unchanged. Other platforms are not listed in this distribution.
 
-The future macOS Apple Silicon Setup binary is intended to be named:
+ReaPackLab and ReaPackLabSetup are independently versioned extensions with separate release packages and feeds. Package metadata is updated only after release assets have been downloaded and verified; `reapack-index` then generates the index while retaining historical versions. Generated package entries are not hand-edited.
 
-`reaper_reapacklabsetup-arm64.dylib`
-
-Release assets will be attached to versioned GitHub Releases and indexed with ReaPack metadata in this repository, after the binary performs actual verified installation and recovery. Do **not** import this repository into classroom REAPER installations until a Setup package and corresponding release have been published and verified.
+Development source is maintained in the access-restricted ReaPackLabDev repository. Automatic source archives of this distribution repository contain packaging metadata, not that development source.
 
 Based on the ReaPack project by Christian Fillion (LGPL-3.0-or-later).
