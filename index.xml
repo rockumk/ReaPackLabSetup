@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="ReaPackLabSetup" commit="f37ff93c9c92259310438df6b913a8ba4b370a2e">
+<index version="1" name="ReaPackLabSetup" commit="0b6ef6fc50d85cfeb6387d0133a4bb5b2fa1f6f4">
   <category name="Extensions">
     <reapack name="ReaPackLabSetup.ext" type="extension" desc="ReaPackLabSetup: bootstrap installer for centrally managed ReaPackLab">
       <metadata>
@@ -30,6 +30,13 @@
 Secure timestamp and hardened runtime verified; checksums and provenance are attached to the release.
 macOS 15.0+ Apple Silicon (ARM64). Signed only; not notarized.]]></changelog>
         <source platform="darwin-arm64" file="reaper_reapacklabsetup-arm64.dylib">https://github.com/rockumk/ReaPackLabSetup/releases/download/v0.1.1/reaper_reapacklabsetup-arm64.dylib</source>
+      </version>
+      <version name="0.1.2" author="ReaLab" time="2026-11-10T22:15:19Z">
+        <changelog><![CDATA[Recovery Setup checks the approved main ReaPackLab release even when an older extension is loaded.
+Avoids redundant replacement if its installed bytes already match the current release.
+With main ReaPackLab v0.14.4, bypasses malformed administrator url.txt via hosted bootstrap pointer.
+macOS 15.0+ Apple Silicon (ARM64). Developer ID-signed; not notarized.]]></changelog>
+        <source platform="darwin-arm64" file="reaper_reapacklabsetup-arm64.dylib">https://github.com/rockumk/ReaPackLabSetup/releases/download/v0.1.2/reaper_reapacklabsetup-arm64.dylib</source>
       </version>
     </reapack>
   </category>
